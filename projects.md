@@ -1,5 +1,5 @@
 ---
-layout: Page
+layout: archive
 title: "Research Projects"
 permalink: /projects/
 ---
