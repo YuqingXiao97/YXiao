@@ -1,2 +1,1 @@
-# YXiao
-Yuqing Xiao personal site
+# Yuqing Xiao personal site
