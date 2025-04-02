@@ -310,10 +310,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  bigdecimal
-  csv
   github-pages
-  jekyll
   minimal-mistakes-jekyll
 
 BUNDLED WITH
