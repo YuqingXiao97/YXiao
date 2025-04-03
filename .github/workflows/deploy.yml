@@ -1,0 +1,19 @@
+name: Build and Deploy Jekyll site
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+      - uses: helaili/jekyll-action@2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
